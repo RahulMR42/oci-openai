@@ -217,8 +217,8 @@ Minimal examples of constructing each auth type:
 from oci_openai import (
     OciOpenAI,
     OciSessionAuth,
-    OciResourcePrincipleAuth,
-    OciInstancePrincipleAuth,
+    OciResourcePrincipalAuth,
+    OciInstancePrincipalAuth,
     OciUserPrincipalAuth,
 )
 
