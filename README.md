@@ -226,10 +226,10 @@ from oci_openai import (
 session_auth = OciSessionAuth(profile_name="DEFAULT")
 
 # 2) Resource Principal (OCI services with RP)
-rp_auth = OciResourcePrincipleAuth()
+rp_auth = OciResourcePrincipalAuth()
 
 # 3) Instance Principal (OCI Compute)
-ip_auth = OciInstancePrincipleAuth()
+ip_auth = OciInstancePrincipalAuth()
 
 # 4) User Principal (API key in ~/.oci/config)
 up_auth = OciUserPrincipalAuth(profile_name="DEFAULT")
