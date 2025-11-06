@@ -219,7 +219,7 @@ from oci_openai import (
     OciSessionAuth,
     OciResourcePrincipleAuth,
     OciInstancePrincipleAuth,
-    OciUserPrincipleAuth,
+    OciUserPrincipalAuth,
 )
 
 # 1) Session (local dev; uses ~/.oci/config + session token)
@@ -232,7 +232,7 @@ rp_auth = OciResourcePrincipleAuth()
 ip_auth = OciInstancePrincipleAuth()
 
 # 4) User Principal (API key in ~/.oci/config)
-up_auth = OciUserPrincipleAuth(profile_name="DEFAULT")
+up_auth = OciUserPrincipalAuth(profile_name="DEFAULT")
 ```
 
 ---
